@@ -144,14 +144,54 @@
 <div class="paragraph">
 <p>Sample curl request to find all GNSS receivers by receiver type:</p>
 </div>
-<div class="paragraph">
-<p>Unresolved directive in &lt;stdin&gt; - include::/home/lbodor/dev/geodesy/geodesy-domain-model/target/generated-snippets/findReceiversByType/curl-request.adoc[]</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ curl 'https://test.geodesy.ga.gov.au/gnssReceivers?type=TRIMBLE%20NETRS' -i</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p>Sample response:</p>
 </div>
-<div class="paragraph">
-<p>Unresolved directive in &lt;stdin&gt; - include::/home/lbodor/dev/geodesy/geodesy-domain-model/target/generated-snippets/findReceiversByType/http-response.adoc[]</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight nowrap"><code data-lang="http">HTTP/1.1 200 OK
+Content-Type: application/hal+json;charset=UTF-8
+Content-Length: 774
+
+{
+  &quot;_embedded&quot; : {
+    &quot;gnssReceivers&quot; : [ {
+      &quot;type&quot; : &quot;TRIMBLE NETRS&quot;,
+      &quot;equipmentType&quot; : &quot;gnss receiver&quot;,
+      &quot;manufacturer&quot; : null,
+      &quot;serialNumber&quot; : &quot;4526253099&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;https://test.geodesy.ga.gov.au/gnssReceivers/4154&quot;
+        },
+        &quot;gnssReceiver&quot; : {
+          &quot;href&quot; : &quot;https://test.geodesy.ga.gov.au/gnssReceivers/4154{?projection}&quot;,
+          &quot;templated&quot; : true
+        }
+      }
+    } ]
+  },
+  &quot;_links&quot; : {
+    &quot;self&quot; : {
+      &quot;href&quot; : &quot;https://test.geodesy.ga.gov.au/gnssReceivers&quot;
+    },
+    &quot;profile&quot; : {
+      &quot;href&quot; : &quot;https://test.geodesy.ga.gov.au/profile/gnssReceivers&quot;
+    }
+  },
+  &quot;page&quot; : {
+    &quot;size&quot; : 20,
+    &quot;totalElements&quot; : 1,
+    &quot;totalPages&quot; : 1,
+    &quot;number&quot; : 0
+  }
+}</code></pre>
+</div>
 </div>
 </div>
 </div>
