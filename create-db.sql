@@ -27,7 +27,7 @@ ALTER ROLE postgres WITH SUPERUSER INHERIT CREATEROLE CREATEDB LOGIN REPLICATION
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.5.5
+-- Dumped from database version 9.5.6
 -- Dumped by pg_dump version 9.5.4
 
 SET statement_timeout = 0;
