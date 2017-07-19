@@ -160,14 +160,42 @@
 <div class="paragraph">
 <p>Sample curl request to find a CORS network by name:</p>
 </div>
-<div class="paragraph">
-<p>Unresolved directive in &lt;stdin&gt; - include::/home/travis/build/GeoscienceAustralia/Geodesy-Web-Services/gws-core/target/generated-snippets/findCorsNetworkByName/curl-request.adoc[]</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ curl 'https://test.geodesy.ga.gov.au/corsNetworks/search/findByName?name=NSW' -i</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p>Sample response:</p>
 </div>
-<div class="paragraph">
-<p>Unresolved directive in &lt;stdin&gt; - include::/home/travis/build/GeoscienceAustralia/Geodesy-Web-Services/gws-core/target/generated-snippets/findCorsNetworkByName/http-response.adoc[]</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight nowrap"><code data-lang="http">HTTP/1.1 200 OK
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+ETag: &quot;0&quot;
+Content-Type: application/hal+json;charset=UTF-8
+Content-Length: 287
+
+{
+  &quot;id&quot; : 4502,
+  &quot;name&quot; : &quot;NSW&quot;,
+  &quot;description&quot; : &quot;New South Wales CORS Network&quot;,
+  &quot;_links&quot; : {
+    &quot;self&quot; : {
+      &quot;href&quot; : &quot;https://test.geodesy.ga.gov.au/corsNetworks/4502&quot;
+    },
+    &quot;corsNetwork&quot; : {
+      &quot;href&quot; : &quot;https://test.geodesy.ga.gov.au/corsNetworks/4502&quot;
+    }
+  }
+}</code></pre>
+</div>
 </div>
 </div>
 </div>
