@@ -162,7 +162,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">$ curl 'https://test.geodesy.ga.gov.au/setups/search/findCurrentByFourCharacterId?id=ALIC&amp;type=CorsSetup' -i</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">$ curl 'https://test.geodesy.ga.gov.au/setups/search/findCurrentByFourCharacterId?id=ALIC&amp;type=GnssAntennaSetup' -i</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -179,38 +179,18 @@ Expires: 0
 Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: DENY
 Content-Type: application/hal+json;charset=UTF-8
-Content-Length: 1946
+Content-Length: 1097
 
 {
-  &quot;id&quot; : 1071,
+  &quot;id&quot; : 1054,
   &quot;siteId&quot; : 852,
-  &quot;type&quot; : &quot;CorsSetup&quot;,
+  &quot;type&quot; : &quot;GnssAntennaSetup&quot;,
   &quot;effectivePeriod&quot; : {
-    &quot;from&quot; : &quot;2013-07-08T00:45:00Z&quot;,
+    &quot;from&quot; : &quot;2011-07-20T00:00:00Z&quot;,
     &quot;to&quot; : null
   },
   &quot;invalidated&quot; : false,
   &quot;equipmentInUse&quot; : [ {
-    &quot;content&quot; : {
-      &quot;id&quot; : {
-        &quot;type&quot; : &quot;LEICA GRX1200GGPRO&quot;,
-        &quot;equipmentType&quot; : &quot;gnss receiver&quot;,
-        &quot;manufacturer&quot; : null,
-        &quot;serialNumber&quot; : &quot;355318&quot;
-      },
-      &quot;configuration&quot; : {
-        &quot;firmwareVersion&quot; : &quot;8.71/3.822&quot;,
-        &quot;satelliteSystem&quot; : &quot;GPS+GLO&quot;,
-        &quot;elevetionCutoffSetting&quot; : &quot;0&quot;,
-        &quot;temperatureStabilization&quot; : &quot;none&quot;,
-        &quot;notes&quot; : null
-      },
-      &quot;period&quot; : {
-        &quot;from&quot; : &quot;2013-07-08T00:45:00Z&quot;,
-        &quot;to&quot; : null
-      }
-    }
-  }, {
     &quot;content&quot; : {
       &quot;id&quot; : {
         &quot;type&quot; : &quot;LEIAR25.R3 NONE&quot;,
@@ -235,30 +215,14 @@ Content-Length: 1946
         &quot;to&quot; : null
       }
     }
-  }, {
-    &quot;content&quot; : {
-      &quot;id&quot; : {
-        &quot;type&quot; : &quot;QUARTZ/INTERNAL&quot;,
-        &quot;equipmentType&quot; : &quot;clock&quot;,
-        &quot;manufacturer&quot; : null,
-        &quot;serialNumber&quot; : null
-      },
-      &quot;configuration&quot; : {
-        &quot;inputFrequency&quot; : null
-      },
-      &quot;period&quot; : {
-        &quot;from&quot; : &quot;1994-05-15T00:00:00Z&quot;,
-        &quot;to&quot; : null
-      }
-    }
   } ],
   &quot;current&quot; : true,
   &quot;_links&quot; : {
     &quot;self&quot; : {
-      &quot;href&quot; : &quot;https://test.geodesy.ga.gov.au/setups/1071&quot;
+      &quot;href&quot; : &quot;https://test.geodesy.ga.gov.au/setups/1054&quot;
     },
     &quot;setup&quot; : {
-      &quot;href&quot; : &quot;https://test.geodesy.ga.gov.au/setups/1071&quot;
+      &quot;href&quot; : &quot;https://test.geodesy.ga.gov.au/setups/1054&quot;
     }
   }
 }</code></pre>
